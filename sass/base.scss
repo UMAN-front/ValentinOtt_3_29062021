@@ -2,11 +2,14 @@ $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
 $couleur-tertiaire: #99E2D0;
 $ajoutPadding: 1rem;
+$ajoutPadding2: 2rem;
+$ajoutPolice: 'Roboto', sans-serif;
 
 h1, h6 {
     font-family: Shrikhand, Roboto, sans-serif;
   }
   body, html {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
   }
 

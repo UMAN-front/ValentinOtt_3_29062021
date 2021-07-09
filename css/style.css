@@ -2,17 +2,98 @@ h1, h6 {
   font-family: Shrikhand, Roboto, sans-serif; }
 
 body, html {
+  margin: 0;
   font-family: 'Roboto', sans-serif; }
 
 .header {
-  padding: 1rem 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.24);
   position: relative;
-  width: 100%; }
+  z-index: 100; }
   .header__logo {
     font-family: "Shrikhand", "cursive";
     margin: 0;
     text-align: center; }
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+  background-color: #f3f3f3;
+  font-size: 1.2rem;
+  position: relative; }
+  .localisation__icon {
+    margin-right: 1rem; }
+  .localisation__texte {
+    font-weight: 700; }
+
+.exploration {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa; }
+  .exploration__titre {
+    margin: 0;
+    font-family: "Roboto", sans-serif; }
+  .exploration__texte {
+    font-weight: 300;
+    margin: 1.5rem 0; }
+
+.fonctionnement {
+  padding: 2rem 1rem; }
+  .fonctionnement__titre {
+    margin-top: 0;
+    font-family: 'roboto';
+    font-weight: 1000; }
+  .fonctionnement__methode {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe; }
+    @media (min-width: 64rem) {
+      .fonctionnement__methode {
+        display: flex; } }
+  .fonctionnement__aide {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative; }
+    @media (min-width: 64rem) {
+      .fonctionnement__aide {
+        flex: 1;
+        margin: 0;
+        margin-left: 2rem; }
+        .fonctionnement__aide:first-child {
+          margin-left: 0.75rem; } }
+    .fonctionnement__aide:first-child {
+      margin-top: 0; }
+    .fonctionnement__aide:last-child {
+      margin-bottom: 0; }
+    .fonctionnement__aide::before {
+      counter-increment: compteListe 1;
+      content: counter(compteListe) " ";
+      background: #9356DC;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      left: -0.75rem; }
+  .fonctionnement__icon {
+    margin-right: 1rem;
+    color: #7e7e7e; }
+
+.restaurants {
+  background-color: #f0f0f0;
+  padding: 2rem 1rem; }
+  .restaurants__titre {
+    font-weight: bold;
+    font-family: "roboto"; }
 
 .grilles {
   display: grid;
@@ -50,36 +131,35 @@ body, html {
     position: relative;
     display: flex;
     align-items: center; }
-  .grille__plat {
-    flex: 1; }
+  .grille__titre {
+    margin: 0 0 .5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 1000; }
+
+.footers {
+  background-color: #353535; }
 
 .footer {
-  background-color: #353535; }
-  .footer .contenant {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem; }
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-bottom: 2rem; }
   .footer__logo {
     color: white;
     font-family: "Shrikhand", "cursive";
     margin: 0;
     font-size: 1.2rem;
-    margin-bottom: 1rem; }
-  .footer__list {
+    margin-left: 1rem;
+    padding-top: 1rem; }
+  .footer__restaurant {
     list-style: none;
     padding: 0;
-    margin: 0; }
-  .footer__listElt {
+    margin: 0;
     margin: 0.5rem 0; }
-    .footer__listElt:first-child {
-      margin-top: 0; }
-    .footer__listElt:last-child {
-      margin-bottom: 0; }
+  .footer__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    color: white; }
   .footer__lien {
     color: white;
     text-decoration: none; }
-    .footer__lien:hover {
-      text-decoration: underline; }
-  .footer__icon {
-    width: 1.2rem;
-    margin-right: 0.5rem; }
