@@ -1,0 +1,48 @@
+.header {
+    &--retour {
+      position: relative;
+    }
+  
+    &__fleche {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        font-size: 30px;
+        text-decoration: none;
+        color: #000;
+      justify-content:center;
+      font-size: 1.2rem;
+      color: black;
+    }
+  }
+  
+  .imageRestaurant {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .menu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+    
+    &__contain-button {
+      padding: 2rem;
+    }
+    &__header {
+      
+      &__titre {
+        margin: rem auto;
+        padding-left: 1rem;
+        padding-top: 2rem
+      }
+    }
+     &__boutton {
+      @include button(primary);
+      text-decoration: none;
+      
+     }
+  }

@@ -15,6 +15,9 @@ body, html {
     margin: 0;
     text-align: center; }
 
+a {
+  text-decoration: none; }
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -37,6 +40,28 @@ body, html {
   .exploration__texte {
     font-weight: 300;
     margin: 1.5rem 0; }
+  .exploration__bouton {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background-color: #686868;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    text-decoration: none; }
+    .exploration__bouton:hover {
+      background-color: white;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5); }
+    .exploration__bouton a {
+      text-decoration: none;
+      color: inherit; }
 
 .fonctionnement {
   padding: 2rem 1rem; }
@@ -163,3 +188,58 @@ body, html {
   .footer__lien {
     color: white;
     text-decoration: none; }
+
+.header--retour {
+  position: relative; }
+
+.header__fleche {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black; }
+
+.imageRestaurant {
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover; }
+
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative; }
+  .menu__contain-button {
+    padding: 2rem; }
+  .menu__header__titre {
+    margin: rem auto;
+    padding-left: 1rem;
+    padding-top: 2rem; }
+  .menu__boutton {
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background-color: #686868;
+    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    text-decoration: none; }
+    .menu__boutton:hover {
+      background-color: white;
+      box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5); }
+    .menu__boutton a {
+      text-decoration: none;
+      color: inherit; }

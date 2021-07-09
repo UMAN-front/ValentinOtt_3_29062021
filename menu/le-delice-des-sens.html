@@ -11,8 +11,8 @@
         <!-- Logo et titres: Shrikhet -->
         <!-- Texte: Roboto -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhet&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <!-- Emojis  -->        
         <script src="https://kit.fontawesome.com/df344a6829.js" crossorigin="anonymous"></script>
       </head>
@@ -21,22 +21,20 @@
     <!-- Logo -->
     <header>
       <div class="header">
-        <div class="header__retour"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></div>
-          <h1 class="header__logo"><a href="../index.html">ohmyfood</a></h1>
+        <a href="../index.html"><i class="fas fa-arrow-left header__fleche"></i></a>
+        <h1 class="header__logo">ohmyfood</h1>
       </div>
     </header>
     <!-- Logo -->
     <!-- Image -->
-     <div class="image">
-       <img class="image__restaurant" src="../images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
-     </div>
+       <img class="imageRestaurant" src="../images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
     <!-- Image -->
     <!-- Menu -->
      <section id="menu">
       <!-- SOUS SECTION MENU -->  
       <div class="menu">
          <div class="menu__header">
-           <h2 class="menu__header__titre">Le délice des sens</h2>
+           <h1 class="menu__header__titre">Le délice des sens</h1>
          </div>
         <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
          <div class="menu__grille">
@@ -202,33 +200,41 @@
         </div>
         <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
           <div class="menu__contain-button">
-            <div class="menu__button">Commander</div>
+            <div class="menu__boutton">Commander</div>
           </div>
       </div>
       <!-- SOUS SECTION MENU -->  
      </section>
     <!-- Menu -->
     <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__contenant">
-      <div class="logo"><a href="index.html">ohmyfood</a></div>
-      <div class="footer__contenant-liens">
-        <div class="footer__contenant-lien">
-          <i class="fas fa-utensils"></i>
-          <h3 class="footer__contenant-lien__titre">Proposer un restaurant</h3>
-        </div>
-        <div class="footer__contenant-lien">
-          <i class="fas fa-hets-helping"></i>
-          <h3 class="footer__contenant-lien__titre">Devenir partenaire</h3>
-        </div>
-        <div class="footer__contenant-lien">
-          <h3 class="footer__contenant-lien__titre">Mentions légales</h3>
-        </div>
-        <div class="footer__contenant-lien">
-          <h3 class="footer__contenant-lien__titre"><a href="mailto:contact@ohmyfood.com">Contact</a></h3>
-        </div>
+    <footer class="footers">
+      <div class="footer__logo">
+          <span class="footer__titre">ohmyfood</span>
       </div>
-    </div>
+      <div class="footer">
+          <div class="footer__restaurant">
+              <a href="#" class="footer__lien">
+                  <i class="fas fa-utensils footer__icon" aria-hidden></i>
+                  Proposer un restaurant
+              </a>
+          </div>
+          <div class="footer__restaurant">
+              <a href="#" class="footer__lien">
+                  <i class="fas fa-hands-helping footer__icon" aria-hidden></i>
+                  Devenir partenaire
+              </a>
+          </div>
+          <div class="footer__restaurant">
+              <a href="#" class="footer__lien">
+                  Mention légales
+              </a>
+          </div>
+          <div class="footer__restaurant">
+              <a href="#" class="footer__lien">
+                  Contact
+              </a>
+          </div>
+      </div>    
   </footer>
     <!-- Footer -->
 </body>
