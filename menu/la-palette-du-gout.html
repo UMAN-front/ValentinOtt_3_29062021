@@ -18,192 +18,132 @@
       </head>
       <body>
         <!-- Logo -->
-        <header>
-          <div class="header__retour">
-            <a href="../index.html"><i class="fas fa-arrow-left header__fleche"></i></a>
+        <header class="header-menu">
+            <a href="../index.html"><i class="fas fa-arrow-left header-menu__fleche"></i></a>
             <h1 class="header__logo">ohmyfood</h1>
-          </div>
         </header>
         <!-- Logo -->
         <!-- Image -->
            <img class="imageRestaurant" src="../images/restaurants/la-palette-du-gout.jpg" alt="Le délice des sens">
         <!-- Image -->
         <!-- Menu -->
-         <section id="menu">
+        <main>
+         <section class="menu-box">
           <!-- SOUS SECTION MENU -->  
-          <div class="menu">
-             <div class="menu__header">
-               <h1 class="menu__header__titre">La palette du goût</h1>
-             </div>
+             <header class="header-m">
+               <h1 class="header-m__titre">La palette du goût</h1>
+               <button class="header-m__bouton">
+                <i class="header-m__like header__like--noBg far fa-heart fa-2x"></i>
+                <i class="header-m__like header__like--bg fas fa-heart fa-2x"></i>
+              </button>
+             </header>
             <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
-             <div class="menu__grille">
+             
             <!-- Liste des ENTRÉES -->
-            <div class="menu__grille__contenant">
-              <div class="menu__grille__titre"><h3>ENTRÉES</h3></div>
-                <div class="menu__grille__case appears-with-opacity" id="case-1">
+            <div class="menu-grille__contenant">
+              <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">ENTRÉES</h3></div>
+                <div class="menu-grille__case appears-with-opacity" id="case-1">
                   <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Fricassée d'escargot</p>
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Fricassée d'escargot</h4>
+                          <p class="menu-case__plat-sousTitre">Au piment d'Espelette</p>
                       </div>
-                        <div class="menu__case__plat-sousTitre">
-                          <p>Au piment d'Espelette</p>
-                        </div>
-                      </div>
-                      <div class="menu__case__prix">25€</div>
-                      </div>
-                      <div class="validation__boxBouton">
-                      <i class="fas fa-check-cercle"></i>
+                      <div class="menu-case__prix">25€</div>
                       </div>
                   </div>
-                  <div class="menu__grille__case appears-with-opacity" id="case-2">
+                  <div class="menu-grille__case appears-with-opacity" id="case-2">
                     <div class="plat-et-prix">
-                      <div class="menu__case__plat">
-                        <div class="menu__case__plat-titre">
-                          <p>Foie gras de canard mi-cuit</p>
-                        </div>
-                        <div class="menu__case__plat-sousTitre">
-                          <p>Et ses copeaux de truffe noire</p>
-                        </div>
+                      <div class="menu-case__plat">
+                          <h4 class="menu-case__plat-titre">Foie gras de canard mi-cuit</h4>
+                          <p class="menu-case__plat-sousTitre">Et ses copeaux de truffe noire</p>
                       </div>
-                      <div class="menu__case__prix">35€</div>
+                      <div class="menu-case__prix">35€</div>
                   </div>
-                    <div class="validation__boxBouton">
-                      <i class="fas fa-check-cercle"></i>
-                    </div>
                   </div>
-                  <div class="menu__grille__case appears-with-opacity" id="case-3">
+                  <div class="menu-grille__case appears-with-opacity" id="case-3">
                     <div class="plat-et-prix">
-                      <div class="menu__case__plat">
-                        <div class="menu__case__plat-titre">
-                          <p>Oeuf au plat</p>
-                        </div>
-                        <div class="menu__case__plat-sousTitre">
-                          <p>Assaisonné à la truffe sur lit de caviar</p>
+                      <div class="menu-case__plat">
+                          <h4 class="menu-case__plat-titre">Oeuf au plat</h4>
+                          <p class="menu-case__plat-sousTitre">Assaisonné à la truffe sur lit de caviar</p>
                         </div>
                       </div>
-                      <div class="menu__case__prix">20€</div>
+                      <div class="menu-case__prix">20€</div>
                   </div>
-                    <div class="validation__boxBouton">
-                      <i class="fas fa-check-cercle"></i>
-                    </div>
                   </div>
                 </div>
             <!-- Liste des ENTRÉES -->
             <!-- Liste des PLATS -->
-            <div class="menu__grille__contenant">
-                 <div class="menu__grille__titre"><h3>PLATS</h3></div>
-                 <div class="menu__grille__case appears-with-opacity" id="case-4">
+            <div class="menu-grille__contenant">
+                 <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">PLATS</h3></div>
+                 <div class="menu-grille__case appears-with-opacity" id="case-4">
                   <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Filet de boeuf aux herbes</p>
-                      </div>
-                      <div class="menu__case__plat-sousTitre">
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                      </div>
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Filet de boeuf aux herbes</h4>
+                        <p class="menu-case__plat-sousTitre">Accompagné de sa ribambelle de légumes</p>
                     </div>
-                    <div class="menu__case__prix">40€</div>
+                    <div class="menu-case__prix">40€</div>
                 </div>
-                  <div class="validation__boxBouton">
-                    <i class="fas fa-check-cercle"></i>
-                  </div>
                 </div>
-                <div class="menu__grille__case appears-with-opacity" id="case-5">
+                <div class="menu-grille__case appears-with-opacity" id="case-5">
                   <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Parmentier de queue de boeuf</p>
-                      </div>
-                      <div class="menu__case__plat-sousTitre">
-                        <p>À la truffe noire sur sa purée de panais</p>
-                      </div>
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Parmentier de queue de boeuf</h4>
+                        <p class="menu-case__plat-sousTitre">À la truffe noire sur sa purée de panais</p>
                     </div>
-                    <div class="menu__case__prix">35€</div>
+                    <div class="menu-case__prix">35€</div>
                 </div>
-                  <div class="validation__boxBouton">
-                    <i class="fas fa-check-cercle"></i>
-                  </div>
                 </div>
-                <div class="menu__grille__case appears-with-opacity" id="case-6">
+                <div class="menu-grille__case appears-with-opacity" id="case-6">
                   <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Filet de turbot</p>
-                      </div>
-                      <div class="menu__case__plat-sousTitre">
-                        <p>Aux agrumes</p>
-                      </div>
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Filet de turbot</h4>
+                        <p class="menu-case__plat-sousTitre">Aux agrumes</p>
                     </div>
-                    <div class="menu__case__prix">44€</div>
-                </div>
-                  <div class="validation__boxBouton">
-                    <i class="fas fa-check-cercle"></i>
+                    <div class="menu-case__prix">44€</div>
                   </div>
                 </div>
                </div>
             <!-- Liste des PLATS -->
             <!-- Liste des DESSERTS -->
-            <div class="menu__grille__contenant">
-                 <div class="menu__grille__titre"><h3>DESSERTS</h3></div>
-                 <div class="menu__grille__case appears-with-opacity" id="case-7">
+            <div class="menu-grille__contenant">
+                 <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">DESSERTS</h3></div>
+                 <div class="menu-grille__case appears-with-opacity" id="case-7">
                   <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Paris-Brest</p>
-                      </div>
-                      <div class="menu__case__plat-sousTitre">
-                        <p>Revisité</p>
-                      </div>
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Paris-Brest</h4>
+                        <p class="menu-case__plat-sousTitre">Revisité</p>
                     </div>
-                    <div class="menu__case__prix">18€</div>
+                    <div class="menu-case__prix">18€</div>
                 </div>
-                  <div class="validation__boxBouton">
-                    <i class="fas fa-check-cercle"></i>
+                </div>
+                <div class="menu-grille__case appears-with-opacity" id="case-8">
+                  <div class="plat-et-prix">
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Macaron au chocolat d'exception</h4>
+                        <p class="menu-case__plat-sousTitre">Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <div class="menu-case__prix">22€</div>
+                </div>
+                </div>
+                <div class="menu-grille__case appears-with-opacity" id="case-9">
+                  <div class="plat-et-prix">
+                    <div class="menu-case__plat">
+                        <h4 class="menu-case__plat-titre">Mousse au chocolat</h4>
+                        <p class="menu-case__plat-sousTitre">Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                    <div class="menu-case__prix">23€</div>
                   </div>
                 </div>
-                <div class="menu__grille__case appears-with-opacity" id="case-8">
-                  <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Macaron au chocolat d'exception</p>
-                      </div>
-                      <div class="menu__case__plat-sousTitre">
-                        <p>Et glace à la vanille de Madagascar</p>
-                      </div>
-                    </div>
-                    <div class="menu__case__prix">22€</div>
-                </div>
-                  <div class="validation__boxBouton">
-                    <i class="fas fa-check-cercle"></i>
-                  </div>
-                </div>
-                <div class="menu__grille__case appears-with-opacity" id="case-9">
-                  <div class="plat-et-prix">
-                    <div class="menu__case__plat">
-                      <div class="menu__case__plat-titre">
-                        <p>Mousse au chocolat</p>
-                      </div>
-                      <div class="menu__case__plat-sousTitre">
-                        <p>Au piment d'Espelette et à la truffe noire</p>
-                      </div>
-                    </div>
-                    <div class="menu__case__prix">23€</div>
-                </div>
-                  <div class="validation__boxBouton">
-                    <i class="fas fa-check-cercle"></i>
-                  </div>
-                </div>
-               </div>
-            <!-- Liste des DESSERTS -->
-            </div>
-            <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
-              <div class="menu__contain-button">
-                <div class="menu__boutton">Commander</div>
               </div>
-          </div>
+            <!-- Liste des DESSERTS -->
+            <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
+              <div class="boutton">
+                <div class="boutton__commander">Commander</div>
+              </div>
+          
           <!-- SOUS SECTION MENU -->  
          </section>
+    </main>
         <!-- Menu -->
         <!-- Footer -->
         <footer class="footers">

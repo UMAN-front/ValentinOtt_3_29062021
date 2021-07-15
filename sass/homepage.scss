@@ -31,8 +31,8 @@
       margin: 1.5rem 0;
     }
   
-     &__bouton {
-      @include button(primary);
+     &__boutton {
+      @include boutton(primary);
       text-decoration: none;
      }
   }
