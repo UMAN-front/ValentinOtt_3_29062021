@@ -177,7 +177,70 @@
       margin-bottom: 0.5rem;
       font-weight: 1000;
     }
+    &__description {
+      flex: 1;
+
+    }
   }
+  .footer-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $ajoutPadding;
+
+  &__bouton {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    
+    &:hover::before {
+      opacity: 1;
+    }
+    
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    }
+  }
+    &__like {
+    transition-duration: .25s;
+    background-color: #f6f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    mix-blend-mode: lighten;
+  }
+  &__bouton:hover {
+    .footer__like {
+      &--sans {
+        opacity: 0;
+      }
+    }
+  }
+}
+.like {
+  background: #FFF;
+}
 
   .footers {
     background-color: #353535;
