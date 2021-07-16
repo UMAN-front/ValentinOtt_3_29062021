@@ -118,6 +118,7 @@
       &__commander {
         @include boutton(primary);
         text-decoration: none;
+        // background: linear-gradient(90deg, #FF79DA 0%,  #9356DC 100%);
       }
      }
   }
