@@ -17,194 +17,145 @@
         <script src="https://kit.fontawesome.com/df344a6829.js" crossorigin="anonymous"></script>
       </head>
   <!-- BODY -->
-<body>
+  <body>
     <!-- Logo -->
-    <header>
-      <div class="header">
-        <a href="../index.html"><i class="fas fa-arrow-left header__fleche"></i></a>
+    <header class="header-menu">
+        <a href="../index.html"><i class="fas fa-arrow-left header-menu__fleche"></i></a>
         <h1 class="header__logo">ohmyfood</h1>
-      </div>
     </header>
     <!-- Logo -->
     <!-- Image -->
-       <img class="imageRestaurant" src="../images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
+    <div class="image">
+       <img class="image__restaurant" src="../images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
+      </div>
     <!-- Image -->
     <!-- Menu -->
-     <section id="menu">
+    <main>
+     <section class="menu-box">
       <!-- SOUS SECTION MENU -->  
-      <div class="menu">
-         <div class="menu__header">
-           <h1 class="menu__header__titre">Le délice des sens</h1>
-         </div>
+         <header class="header-m">
+           <h1 class="header-m__titre">Le délice des sens</h1>
+           <button class="header-m__bouton">
+            <i class="header-m__like header__like--noBg far fa-heart fa-2x"></i>
+            <i class="header-m__like header__like--bg fas fa-heart fa-2x"></i>
+          </button>
+         </header>
         <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
-         <div class="menu__grille">
+         
         <!-- Liste des ENTRÉES -->
-        <div class="menu__grille__contenant">
-          <div class="menu__grille__titre"><h3>ENTRÉES</h3></div>
-            <div class="menu__grille__case appears-with-opacity" id="case-1">
+        <div class="menu-grille__contenant">
+          <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">ENTRÉES</h3></div>
+          <!-- ENTRÉE 1 -->
+            <div class="menu-grille__case appears-with-opacity" id="case-1">
               <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Tartare de thon</p>
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Tartare de thon</h4>
+                      <p class="menu-case__plat-sousTitre">Assaisonné au yuzu</p>
                   </div>
-                    <div class="menu__case__plat-sousTitre">
-                      <p>Assaisonné au yuzu</p>
-                    </div>
-                  </div>
-                  <div class="menu__case__prix">25€</div>
-                  </div>
-                  <div class="validation__boxBouton">
-                  <i class="fas fa-check-cercle"></i>
+                  <div class="menu-case__prix">25€</div>
                   </div>
               </div>
-              <div class="menu__grille__case appears-with-opacity" id="case-2">
+              <!-- ENTRÉE 2 -->
+              <div class="menu-grille__case appears-with-opacity" id="case-2">
                 <div class="plat-et-prix">
-                  <div class="menu__case__plat">
-                    <div class="menu__case__plat-titre">
-                      <p>Bouché de homard croutillant</p>
-                    </div>
-                    <div class="menu__case__plat-sousTitre">
-                      <p>Et sa farandole de petits légumes</p>
-                    </div>
+                  <div class="menu-case__plat">
+                      <h4 class="menu-case__plat-titre">Bouchée de homard croustillant </h4>
+                      <p class="menu-case__plat-sousTitre">Et sa farandole de petits légumes</p>
                   </div>
-                  <div class="menu__case__prix">35€</div>
+                  <div class="menu-case__prix">35€</div>
               </div>
-                <div class="validation__boxBouton">
-                  <i class="fas fa-check-cercle"></i>
-                </div>
               </div>
-              <div class="menu__grille__case appears-with-opacity" id="case-3">
+              <!-- ENTRÉE 3 -->
+              <div class="menu-grille__case appears-with-opacity" id="case-3">
                 <div class="plat-et-prix">
-                  <div class="menu__case__plat">
-                    <div class="menu__case__plat-titre">
-                      <p>Velouté de cèpes</p>
-                    </div>
-                    <div class="menu__case__plat-sousTitre">
-                      <p>Aux truffes</p>
+                  <div class="menu-case__plat">
+                      <h4 class="menu-case__plat-titre">Velouté de cèpes </h4>
+                      <p class="menu-case__plat-sousTitre">Aux truffes</p>
                     </div>
                   </div>
-                  <div class="menu__case__prix">20€</div>
+                  <div class="menu-case__prix">20€</div>
               </div>
-                <div class="validation__boxBouton">
-                  <i class="fas fa-check-cercle"></i>
-                </div>
               </div>
             </div>
         <!-- Liste des ENTRÉES -->
         <!-- Liste des PLATS -->
-        <div class="menu__grille__contenant">
-             <div class="menu__grille__titre"><h3>PLATS</h3></div>
-             <div class="menu__grille__case appears-with-opacity" id="case-4">
+        <div class="menu-grille__contenant">
+             <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">PLATS</h3></div>
+             <!-- PLAT 1 -->     
+             <div class="menu-grille__case appears-with-opacity" id="case-4">
               <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Poulet rôti aux herbes de provence</p>
-                  </div>
-                  <div class="menu__case__plat-sousTitre">
-                    <p>Et sa crème de truffe</p>
-                  </div>
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Poulet rôti aux herbes de Provence </h4>
+                    <p class="menu-case__plat-sousTitre">Et sa crème de truffe</p>
                 </div>
-                <div class="menu__case__prix">40€</div>
+                <div class="menu-case__prix">40€</div>
             </div>
-              <div class="validation__boxBouton">
-                <i class="fas fa-check-cercle"></i>
-              </div>
             </div>
-            <div class="menu__grille__case appears-with-opacity" id="case-5">
+            <!-- PLAT 2 -->     
+            <div class="menu-grille__case appears-with-opacity" id="case-5">
               <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Langouste rôtie</p>
-                  </div>
-                  <div class="menu__case__plat-sousTitre">
-                    <p>Et ses légumes de saison</p>
-                  </div>
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Langouste rôtie </h4>
+                    <p class="menu-case__plat-sousTitre">Et ses légumes de saison</p>
                 </div>
-                <div class="menu__case__prix">35€</div>
+                <div class="menu-case__prix">35€</div>
             </div>
-              <div class="validation__boxBouton">
-                <i class="fas fa-check-cercle"></i>
-              </div>
             </div>
-            <div class="menu__grille__case appears-with-opacity" id="case-6">
+            <!-- PLAT 3 -->     
+            <div class="menu-grille__case appears-with-opacity" id="case-6">
               <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Côte de boeuf angus</p>
-                  </div>
-                  <div class="menu__case__plat-sousTitre">
-                    <p>Et sa purée de panais</p>
-                  </div>
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Côte de boeuf Angus </h4>
+                    <p class="menu-case__plat-sousTitre">Et sa purée de panais</p>
                 </div>
-                <div class="menu__case__prix">44€</div>
-            </div>
-              <div class="validation__boxBouton">
-                <i class="fas fa-check-cercle"></i>
+                <div class="menu-case__prix">44€</div>
               </div>
             </div>
            </div>
         <!-- Liste des PLATS -->
         <!-- Liste des DESSERTS -->
-        <div class="menu__grille__contenant">
-             <div class="menu__grille__titre"><h3>DESSERTS</h3></div>
-             <div class="menu__grille__case appears-with-opacity" id="case-7">
+        <div class="menu-grille__contenant">
+             <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">DESSERTS</h3></div>
+             <!-- DESSERT 1 -->     
+             <div class="menu-grille__case appears-with-opacity" id="case-7">
               <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Farandole de desserts</p>
-                  </div>
-                  <div class="menu__case__plat-sousTitre">
-                    <p>Du chef</p>
-                  </div>
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Farandole de desserts</h4>
+                    <p class="menu-case__plat-sousTitre">Du chef</p>
                 </div>
-                <div class="menu__case__prix">18€</div>
+                <div class="menu-case__prix">18€</div>
             </div>
-              <div class="validation__boxBouton">
-                <i class="fas fa-check-cercle"></i>
+            </div>
+            <!-- DESSERT 2 -->     
+            <div class="menu-grille__case appears-with-opacity" id="case-8">
+              <div class="plat-et-prix">
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Crème brulée </h4>
+                    <p class="menu-case__plat-sousTitre">Revisitée</p>
+                </div>
+                <div class="menu-case__prix">22€</div>
+            </div>
+            </div>
+            <!-- DESSERT 3 -->     
+            <div class="menu-grille__case appears-with-opacity" id="case-9">
+              <div class="plat-et-prix">
+                <div class="menu-case__plat">
+                    <h4 class="menu-case__plat-titre">Tiramisu</h4>
+                    <p class="menu-case__plat-sousTitre">À la noisette</p>
+                </div>
+                <div class="menu-case__prix">23€</div>
               </div>
             </div>
-            <div class="menu__grille__case appears-with-opacity" id="case-8">
-              <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Crème brulée</p>
-                  </div>
-                  <div class="menu__case__plat-sousTitre">
-                    <p>Revisité</p>
-                  </div>
-                </div>
-                <div class="menu__case__prix">22€</div>
-            </div>
-              <div class="validation__boxBouton">
-                <i class="fas fa-check-cercle"></i>
-              </div>
-            </div>
-            <div class="menu__grille__case appears-with-opacity" id="case-9">
-              <div class="plat-et-prix">
-                <div class="menu__case__plat">
-                  <div class="menu__case__plat-titre">
-                    <p>Tiramisu</p>
-                  </div>
-                  <div class="menu__case__plat-sousTitre">
-                    <p>À la noisette</p>
-                  </div>
-                </div>
-                <div class="menu__case__prix">23€</div>
-            </div>
-              <div class="validation__boxBouton">
-                <i class="fas fa-check-cercle"></i>
-              </div>
-            </div>
-           </div>
-        <!-- Liste des DESSERTS -->
-        </div>
-        <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
-          <div class="menu__contain-button">
-            <div class="menu__boutton">Commander</div>
           </div>
-      </div>
+        <!-- Liste des DESSERTS -->
+        <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
+          <div class="boutton">
+            <div class="boutton__commander">Commander</div>
+          </div>
+      
       <!-- SOUS SECTION MENU -->  
      </section>
+</main>
     <!-- Menu -->
     <!-- Footer -->
     <footer class="footers">
