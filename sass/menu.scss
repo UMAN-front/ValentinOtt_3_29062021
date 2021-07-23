@@ -19,7 +19,12 @@
   .image {
     width: 100%;
     height: 38vh;
-
+      @media (min-width:1024px) {
+        height: 25vh;
+      }
+      @media (min-width:1025px) {
+        height: 38vh;
+      }
     &__restaurant {
       height: 20rem;
       width: 100%;

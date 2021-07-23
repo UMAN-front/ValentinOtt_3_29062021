@@ -73,6 +73,10 @@ a {
     font-weight: 900; }
   .fonctionnement__texte {
     font-weight: bold; }
+  .fonctionnement__contenant {
+    max-width: 1280px;
+    margin: auto;
+    position: relative; }
   .fonctionnement__aide:hover {
     background-color: #f2eafb; }
   .fonctionnement__aide:hover i {
@@ -82,7 +86,7 @@ a {
     padding: 0;
     list-style: none;
     counter-reset: compteListe; }
-    @media (min-width: 64rem) {
+    @media (min-width: 640px) {
       .fonctionnement__methode {
         display: flex; } }
   .fonctionnement__aide {
@@ -124,7 +128,7 @@ a {
 
 .restaurant {
   background-color: #f0f0f0;
-  padding: 2rem 1rem; }
+  padding: 2rem 2rem; }
   .restaurant__titre {
     font-weight: bold;
     font-family: "roboto"; }
@@ -134,14 +138,16 @@ a {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem; }
-  @media (min-width: 64rem) {
+  @media (min-width: 1024px) {
     .grilles {
       grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1025px) {
+    .grilles {
+      grid-template-columns: repeat(4, 1fr); } }
 
 .contenant {
-  max-width: 1280px;
-  margin: auto;
-  position: relative; }
+  position: relative;
+  margin: auto; }
 
 .grille {
   background-color: #fff;
@@ -272,6 +278,12 @@ a {
 .image {
   width: 100%;
   height: 38vh; }
+  @media (min-width: 1024px) {
+    .image {
+      height: 25vh; } }
+  @media (min-width: 1025px) {
+    .image {
+      height: 38vh; } }
   .image__restaurant {
     height: 20rem;
     width: 100%;
