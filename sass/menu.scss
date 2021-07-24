@@ -41,6 +41,9 @@
     padding: $ajoutPadding;
     padding-bottom: 0;
 
+    &__titre {
+    font-family: "Shrikhand", "cursive";  
+    }
   &__bouton {
     height: 2rem;
     width: 2rem;

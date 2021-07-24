@@ -308,6 +308,8 @@ a {
   justify-content: space-between;
   padding: 1rem;
   padding-bottom: 0; }
+  .header-m__titre {
+    font-family: "Shrikhand", "cursive"; }
   .header-m__bouton {
     height: 2rem;
     width: 2rem;
