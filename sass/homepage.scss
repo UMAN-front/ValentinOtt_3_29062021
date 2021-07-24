@@ -122,7 +122,7 @@
     }
   }
   .restaurant {
-    background-color: #f0f0f0;
+    background-color: #F6F6F6;
     padding: 2rem 2rem;
   
     &__titre {
@@ -147,8 +147,7 @@
   .contenant {
     position: relative;
     margin: auto;
-  }
-  
+}
   .grille {
     background-color: #fff;
     border-radius: 1rem;
@@ -194,6 +193,7 @@
 
     }
   }
+  
   .footer-m {
     display: flex;
     align-items: center;
@@ -263,7 +263,13 @@
       flex-direction: column;
       padding: $ajoutPadding;
       padding-bottom: $ajoutPadding2;
-    
+
+      @media (min-width: 1025px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
     &__logo {
       color: white;
       font-family: "Shrikhand", "cursive";
@@ -271,6 +277,12 @@
       font-size: 1.2rem;
       margin-left: $ajoutPadding;
       padding-top: $ajoutPadding;
+
+      @media (min-width: 1025px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   
     &__restaurant {

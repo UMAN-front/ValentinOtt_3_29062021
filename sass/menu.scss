@@ -119,7 +119,7 @@
       display: flex;
       text-decoration: none;
       justify-content: center;
-      padding: 3rem 0;
+      padding: 1rem 0 4rem;
       &__commander {
         @include boutton(primary);
         text-decoration: none;
@@ -128,52 +128,89 @@
      }
   }
   .menu-case {
-    &__plat {
-      white-space: nowrap;
-    text-overflow: ellipsis;
+    margin: 1.2rem 0;
+    padding: .2rem;
+    position: relative;
+    cursor: pointer;
     overflow: hidden;
+    display: flex;
+    // align-items: center;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.10);
+    width: 100%;
+    height: 65px;
+    border-radius: 15px;
+    background-color: white;
+    animation: animation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-fill-mode: both;
+    transform: scale(0);
+
+    &__plat &__plat-titre {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    &__plat {
+      flex: 1;
+      align-items: center;
+      justify-items: center;
+      padding-left: 0.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
     &__plat-titre {
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      margin-left: .5rem;
-      margin-bottom: .2rem;
-
+      margin: 0;
+      margin-top: 1rem;
     }
     &__plat-sousTitre {
+      margin: 0;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-      margin-left: .5rem;
-      margin-bottom: 1rem;
-      margin-top: .2rem;
     }
     &__prix {
-      font-weight: 700;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      padding-right: 1.5rem;
-      margin-top: 1.7rem;
-      
+      padding-right: 10px;
+      padding-top: 2rem;
+      font-weight: bold;
+      padding-left: 7px;
     }
     &__case {
       width: 10%;
       padding: 0px 5%;
       text-align: center;
-
+    }
+    &__confirmation {
+      background-color: #99e2d0;
+      margin: -1rem -5rem -1rem 1rem;
+      width: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: .5s;
+    }
+    &__wrapIcon {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      transform: rotate(180deg);
+      transition-duration: .5s;    
+    }
+    &__icon {
+      color: #99e2d0;
+    }
+    &:hover &__confirmation {
+      margin-right: -0.2rem;
+    }
+    &:hover &__wrapIcon {
+      transform: rotate(0);
     }
   }
   .plat-et-prix {
-    width: 100%;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
   .menu-grille {
 
@@ -189,7 +226,7 @@
       padding-bottom: .05rem;
       font-weight: 400;
     }
-  &__sous-titre::after {
+  &__titre::after {
     content: '';
     width: 50px;
     height: 4px;
@@ -199,25 +236,7 @@
     left: 0px;
     bottom: 10px;
     }
-  &__case {  
-    margin: 1.2rem 0;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.10);
-    width: 100%;
-    height: 70px;
-    border-radius: 15px;
-    background-color: white;
-    animation: animation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-fill-mode: both;
-    transform: scale(0);
-
-    
   }
- }
  #case-1 {
    animation-delay: 0.15s;
  }
