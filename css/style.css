@@ -22,12 +22,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem 1rem;
+  padding: 0 1rem;
   background-color: #f3f3f3;
   font-size: 1.2rem;
   position: relative; }
   .localisation__icon {
-    margin-right: 2rem;
+    margin-right: 1rem;
     margin-bottom: 2px; }
   .localisation__texte {
     font-weight: 700; }
@@ -309,7 +309,8 @@ a {
   padding: 1rem;
   padding-bottom: 0; }
   .header-m__titre {
-    font-family: "Shrikhand", "cursive"; }
+    font-family: "Shrikhand", "cursive";
+    font-size: 30px; }
   .header-m__bouton {
     height: 2rem;
     width: 2rem;
@@ -321,7 +322,8 @@ a {
     justify-content: center;
     cursor: pointer;
     position: relative;
-    background-color: black; }
+    background-color: black;
+    margin-right: 2rem; }
     .header-m__bouton:hover::before {
       opacity: 1; }
     .header-m__bouton::before {
