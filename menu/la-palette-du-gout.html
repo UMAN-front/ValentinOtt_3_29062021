@@ -1,227 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>La palette du goût</title>
-        <!-- Feuille De Style  -->
-        <link rel="stylesheet" href="/css/style.css">
-        <!-- Police :  -->
-        <!-- Logo et titres: Shrikhet -->
-        <!-- Texte: Roboto -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-        <!-- Emojis  -->        
-        <script src="https://kit.fontawesome.com/df344a6829.js" crossorigin="anonymous"></script>
-      </head>
-      <body>
-        <!-- Logo -->
-        <header class="header-menu">
-            <a href="../index.html"><i class="fas fa-arrow-left header-menu__fleche"></i></a>
-            <h1 class="header__logo">ohmyfood</h1>
-        </header>
-        <!-- Logo -->
-        <!-- Image -->
-        <div class="image">
-           <img class="image__restaurant" src="../images/restaurants/la-palette-du-gout.jpg" alt="Le délice des sens">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La palette du goût</title>
+  <!-- Feuille De Style  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Police :  -->
+  <!-- Logo et titres: Shrikhet -->
+  <!-- Texte: Roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,100&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+  <!-- Emojis  -->
+  <script src="https://kit.fontawesome.com/df344a6829.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Logo -->
+  <header class="header-menu">
+    <a href="../index.html"><i class="fas fa-arrow-left header-menu__fleche"></i></a>
+    <h1 class="header__logo">ohmyfood</h1>
+  </header>
+  <!-- Logo -->
+  <!-- Image -->
+  <div class="image">
+    <img class="image__restaurant" src="../images/restaurants/la-palette-du-gout.jpg" alt="Le délice des sens">
+  </div>
+  <!-- Image -->
+  <!-- Menu -->
+  <main>
+    <section class="menu-box">
+      <!-- SOUS SECTION MENU -->
+      <header class="header-m">
+        <h2 class="header-m__titre">La palette du goût</h2>
+        <button class="header-m__bouton">
+          <i class="far fa-heart fa-2x header-m__like header__like--sans "></i>
+          <i class="fas fa-heart fa-2x header-m__like header__like--avec "></i>
+        </button>
+      </header>
+      <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
+
+      <!-- Liste des ENTRÉES -->
+      <div class="menu-grille__contenant">
+        <div class="menu-grille__titre">
+          <h3 class="menu-grille__sous-titre">ENTRÉES</h3>
         </div>
-        <!-- Image -->
-        <!-- Menu -->
-        <main>
-         <section class="menu-box">
-          <!-- SOUS SECTION MENU -->  
-             <header class="header-m">
-               <h2 class="header-m__titre">La palette du goût</h2>
-               <button class="header-m__bouton">
-                <i class="far fa-heart fa-2x header-m__like header__like--sans "></i>
-                <i class="fas fa-heart fa-2x header-m__like header__like--avec "></i>
-              </button>
-             </header>
-            <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
-             
-            <!-- Liste des ENTRÉES -->
-            <div class="menu-grille__contenant">
-              <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">ENTRÉES</h3></div>
-              <!-- ENTRÉE 1 -->
-                <section class="menu-case appears-with-opacity" id="case-1">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Fricassée d'escargot</h4>
-                          <p class="menu-case__plat-sousTitre">Au piment d'Espelette</p>
-                    </header>
-                      <div class="menu-case__prix">25€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-                  <!-- ENTRÉE 2 -->
-                  <section class="menu-case appears-with-opacity" id="case-2">
-                    <div class="plat-et-prix"></div>
-                      <header class="menu-case__plat">
-                          <h4 class="menu-case__plat-titre">Foie gras de canard mi-cuit</h4>
-                            <p class="menu-case__plat-sousTitre">Et ses copeaux de truffe noire</p>
-                      </header>
-                        <div class="menu-case__prix">35€</div>
-                          <div class="menu-case__confirmation">
-                            <div class="menu-case__wrapIcon">
-                              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                            </div>
-                          </div>
-                  </section>
-                  <!-- ENTRÉE 3 -->
-                  <section class="menu-case appears-with-opacity" id="case-3">
-                    <div class="plat-et-prix"></div>
-                      <header class="menu-case__plat">
-                          <h4 class="menu-case__plat-titre">Oeuf au plat</h4>
-                            <p class="menu-case__plat-sousTitre">Assaisonné à la truffe sur lit de caviar</p>
-                      </header>
-                        <div class="menu-case__prix">20€</div>
-                          <div class="menu-case__confirmation">
-                            <div class="menu-case__wrapIcon">
-                              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                            </div>
-                          </div>
-                  </section>
-                </div>
-            <!-- Liste des ENTRÉES -->
-            <!-- Liste des PLATS -->
-            <div class="menu-grille__contenant">
-                 <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">PLATS</h3></div>
-                 <!-- PLAT 1 -->     
-                 <section class="menu-case appears-with-opacity" id="case-4">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Filet de boeuf aux herbes</h4>
-                          <p class="menu-case__plat-sousTitre">Accompagné de sa ribambelle de légumes</p>
-                    </header>
-                      <div class="menu-case__prix">40€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-                <!-- PLAT 2 -->     
-                <section class="menu-case appears-with-opacity" id="case-5">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Parmentier de queue de boeuf</h4>
-                          <p class="menu-case__plat-sousTitre">À la truffe noire sur sa purée de panais</p>
-                    </header>
-                      <div class="menu-case__prix">35€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-                <!-- PLAT  -->     
-                <section class="menu-case appears-with-opacity" id="case-6">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Filet de turbot</h4>
-                          <p class="menu-case__plat-sousTitre">Aux agrumes</p>
-                    </header>
-                      <div class="menu-case__prix">44€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-               </div>
-            <!-- Liste des PLATS -->
-            <!-- Liste des DESSERTS -->
-            <div class="menu-grille__contenant">
-                 <div class="menu-grille__titre"><h3 class="menu-grille__sous-titre">DESSERTS</h3></div>
-                 <!-- DESSERT 1 -->     
-                 <section class="menu-case appears-with-opacity" id="case-7">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Paris-Brest</h4>
-                          <p class="menu-case__plat-sousTitre">Revisité</p>
-                    </header>
-                      <div class="menu-case__prix">18€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-                <!-- DESSERT 2 -->     
-                <section class="menu-case appears-with-opacity" id="case-8">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Macaron au chocolat d'exception </h4>
-                          <p class="menu-case__plat-sousTitre">Et glace à la vanille de Madagascar</p>
-                    </header>
-                      <div class="menu-case__prix">22€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-                <!-- DESSERT 3 -->     
-                <section class="menu-case appears-with-opacity" id="case-9">
-                  <div class="plat-et-prix"></div>
-                    <header class="menu-case__plat">
-                        <h4 class="menu-case__plat-titre">Mousse au chocolat</h4>
-                          <p class="menu-case__plat-sousTitre">Au piment d'Espelette et à la truffe noire</p>
-                    </header>
-                      <div class="menu-case__prix">23€</div>
-                        <div class="menu-case__confirmation">
-                          <div class="menu-case__wrapIcon">
-                            <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                </section>
-              </div>
-            <!-- Liste des DESSERTS -->
-            <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
-              <div class="boutton">
-                <div class="boutton__commander">Commander</div>
-              </div>
-          
-          <!-- SOUS SECTION MENU -->  
-         </section>
-    </main>
-        <!-- Menu -->
-        <!-- Footer -->
-        <footer class="footers">
-          <div class="footer__logo">
-              <span class="footer__titre">ohmyfood</span>
+        <!-- ENTRÉE 1 -->
+        <section class="menu-case appears-with-opacity" id="case-1">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Fricassée d'escargot</h4>
+            <p class="menu-case__plat-sousTitre">Au piment d'Espelette</p>
+          </header>
+          <div class="menu-case__prix">25€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
           </div>
-          <div class="footer">
-              <div class="footer__restaurant">
-                  <a href="#" class="footer__lien">
-                      <i class="fas fa-utensils footer__icon" aria-hidden></i>
-                      Proposer un restaurant
-                  </a>
-              </div>
-              <div class="footer__restaurant">
-                  <a href="#" class="footer__lien">
-                      <i class="fas fa-hands-helping footer__icon" aria-hidden></i>
-                      Devenir partenaire
-                  </a>
-              </div>
-              <div class="footer__restaurant">
-                  <a href="#" class="footer__lien">
-                      Mention légales
-                  </a>
-              </div>
-              <div class="footer__restaurant">
-                <a href="mailto:ottvalentin1@gmail.com" class="footer__lien">
-                  Contact
-              </a>
-              </div>
-          </div>    
-      </footer>
-        <!-- Footer -->
-    </body>
+        </section>
+        <!-- ENTRÉE 2 -->
+        <section class="menu-case appears-with-opacity" id="case-2">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Foie gras de canard mi-cuit</h4>
+            <p class="menu-case__plat-sousTitre">Et ses copeaux de truffe noire</p>
+          </header>
+          <div class="menu-case__prix">35€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+        <!-- ENTRÉE 3 -->
+        <section class="menu-case appears-with-opacity" id="case-3">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Oeuf au plat</h4>
+            <p class="menu-case__plat-sousTitre">Assaisonné à la truffe sur lit de caviar</p>
+          </header>
+          <div class="menu-case__prix">20€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Liste des ENTRÉES -->
+      <!-- Liste des PLATS -->
+      <div class="menu-grille__contenant">
+        <div class="menu-grille__titre">
+          <h3 class="menu-grille__sous-titre">PLATS</h3>
+        </div>
+        <!-- PLAT 1 -->
+        <section class="menu-case appears-with-opacity" id="case-4">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Filet de boeuf aux herbes</h4>
+            <p class="menu-case__plat-sousTitre">Accompagné de sa ribambelle de légumes</p>
+          </header>
+          <div class="menu-case__prix">40€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+        <!-- PLAT 2 -->
+        <section class="menu-case appears-with-opacity" id="case-5">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Parmentier de queue de boeuf</h4>
+            <p class="menu-case__plat-sousTitre">À la truffe noire sur sa purée de panais</p>
+          </header>
+          <div class="menu-case__prix">35€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+        <!-- PLAT  -->
+        <section class="menu-case appears-with-opacity" id="case-6">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Filet de turbot</h4>
+            <p class="menu-case__plat-sousTitre">Aux agrumes</p>
+          </header>
+          <div class="menu-case__prix">44€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Liste des PLATS -->
+      <!-- Liste des DESSERTS -->
+      <div class="menu-grille__contenant">
+        <div class="menu-grille__titre">
+          <h3 class="menu-grille__sous-titre">DESSERTS</h3>
+        </div>
+        <!-- DESSERT 1 -->
+        <section class="menu-case appears-with-opacity" id="case-7">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Paris-Brest</h4>
+            <p class="menu-case__plat-sousTitre">Revisité</p>
+          </header>
+          <div class="menu-case__prix">18€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+        <!-- DESSERT 2 -->
+        <section class="menu-case appears-with-opacity" id="case-8">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Macaron au chocolat d'exception </h4>
+            <p class="menu-case__plat-sousTitre">Et glace à la vanille de Madagascar</p>
+          </header>
+          <div class="menu-case__prix">22€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+        <!-- DESSERT 3 -->
+        <section class="menu-case appears-with-opacity" id="case-9">
+          <div class="plat-et-prix"></div>
+          <header class="menu-case__plat">
+            <h4 class="menu-case__plat-titre">Mousse au chocolat</h4>
+            <p class="menu-case__plat-sousTitre">Au piment d'Espelette et à la truffe noire</p>
+          </header>
+          <div class="menu-case__prix">23€</div>
+          <div class="menu-case__confirmation">
+            <div class="menu-case__wrapIcon">
+              <i class="fas fa-check menu-case__icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Liste des DESSERTS -->
+      <!-- GRILLE DE L'ENSEMBLE DES PLATS -->
+      <div class="boutton">
+        <div class="boutton__commander">Commander</div>
+      </div>
+
+      <!-- SOUS SECTION MENU -->
+    </section>
+  </main>
+  <!-- Menu -->
+  <!-- Footer -->
+  <footer class="footers">
+    <div class="footer__logo">
+      <span class="footer__titre">ohmyfood</span>
+    </div>
+    <div class="footer">
+      <div class="footer__restaurant">
+        <a href="#" class="footer__lien">
+          <i class="fas fa-utensils footer__icon" aria-hidden></i>
+          Proposer un restaurant
+        </a>
+      </div>
+      <div class="footer__restaurant">
+        <a href="#" class="footer__lien">
+          <i class="fas fa-hands-helping footer__icon" aria-hidden></i>
+          Devenir partenaire
+        </a>
+      </div>
+      <div class="footer__restaurant">
+        <a href="#" class="footer__lien">
+          Mention légales
+        </a>
+      </div>
+      <div class="footer__restaurant">
+        <a href="mailto:ottvalentin1@gmail.com" class="footer__lien">
+          Contact
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+</body>
 
 </html>
